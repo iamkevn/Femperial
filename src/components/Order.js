@@ -43,15 +43,19 @@ export class Order extends Component {
                             {cartItems.map(item =>
                                 <li>
                                     
-                                    <div>
+                                    <div className="item">
+                                    <div className="makeup">
                                         <h4>{item.title}</h4>
-                                        <div>{item.description}</div>
+                                        <div className="desc">{item.description}</div>
+                                    </div>
+                                        <div>Qty: {item.count / 2}</div>
+                                        <div>${item.price * item.count / 2}</div>
                                     </div>
                                 </li>
                             )}
                         </ol>
-                        <div>
-                            <div>Total: {util.formatCurrency(cartItems.reduce((a, c) => a + c.price * (c.count / 2), 0))}</div>                
+                        <div className="total-box">
+                            <div className="total">Total: {util.formatCurrency(cartItems.reduce((a, c) => a + c.price * (c.count / 2), 0))}</div>                
                         </div>
                     </div>
                 }
