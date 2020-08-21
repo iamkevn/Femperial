@@ -1,0 +1,118 @@
+.basket {
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 1.5rem;
+    font-size: 2.5rem;
+    position: fixed;
+    cursor: pointer;
+    i {
+      padding: 2rem 0;
+      text-shadow: 1px 1px 2px #000000;
+    }
+  }
+  h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 6rem;
+    margin-left: 55rem;
+    margin-bottom: 0rem;
+    text-shadow: 1px 1px 2px #000000;
+  }
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 3.4rem;
+    margin-left: 55rem;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 0rem;
+    letter-spacing: 2rem;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  header {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    nav {
+      position: fixed;
+      font-family: sans-serif;
+      ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        font-size: 2.5rem;
+        padding: 1rem 1.9rem;
+      }
+      i {
+        padding: 1rem;
+        text-shadow: 1px 1px 2px #000000;
+      }
+    }
+  }
+}
+.bag {
+  width: 60vw;
+  margin: 10rem auto;
+  font-family: 'Montserrat', sans-serif;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid lightgrey;
+    padding-bottom: 1rem;
+  }
+  .title {
+    width: 20rem;
+  }
+  h3 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid lightgrey;
+    padding-bottom: 1rem;
+  }
+  img {
+    width: 15rem;
+  }
+  button {
+    border: none;
+    padding: 1rem 3rem;
+    letter-spacing: 0.1rem;
+    background-color: #ba3127;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  .green {
+    background-color: green;
+    padding: 1rem 3.6rem;
+  }
+  .checkout {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    div {
+      margin: 0 6.5rem;
+    }
+  }
+}

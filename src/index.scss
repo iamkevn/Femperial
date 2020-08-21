@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  background-color: #fafafa;
 }
 body {
   font: 1.6rem Helvetica;
@@ -11,4 +12,12 @@ body {
 
 #root {
   height: 100%;
+}
+
+button {
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &:hover {
+    transform: scale(1.1);
+  }
 }

@@ -2,11 +2,17 @@ import React, {Component} from 'react';
 import Products from './components/Products';
 import './App.css';
 import Basket from './components/Basket';
+import Home from './components/Home';
+import Account from './components/Account';
+import Login from './components/Login';
+import Order from './components/Order';
+
+import { Route, Switch } from 'react-router-dom';
 
 export class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { products: [], filteredProducts: [], cartItems:[]};
+    this.state = { products: [], cartItems:[]};
     this.handleAddToCart = this.handleAddToCart.bind(this);
     this.handleRemoveFromCart = this.handleRemoveFromCart.bind(this);
 }
@@ -50,17 +56,24 @@ export class App extends Component {
   render() {
     return (
       <div className="container">
-      <h1>Femperial</h1>
-      <div className="row">
-        <div className="col-md-8">
-          
-          <Products products={this.state.filteredProducts} handleAddToCart={this.handleAddToCart}/>
-        </div>
-        <div className="col-md-4">
-          <Basket cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveFromCart}/>
-        </div>
+      
+          <Switch>
+          <Route exact path="/shop" render={() => {
+          return <Products cartItems={this.state.cartItems} products={this.state.products} handleAddToCart={this.handleAddToCart} /> 
+          }} />
+         <Route exact path="/bag" render={() => {
+          return <Basket cartItems={this.state.cartItems} handleRemoveFromCart={this.handleRemoveFromCart}/>
+          }} />
+         <Route exact path="/order" render={() => {
+          return <Order cartItems={this.state.cartItems}/>
+          }} />
+         <Route exact path="/" render={() => {
+          return <Home cartItems={this.state.cartItems} />
+          }} />
+        <Route exact path="/account" component={Account} />
+        <Route exact path="/account/login" component={Login} />
+          </Switch>
       </div>
-    </div>
     )
   }
 }
