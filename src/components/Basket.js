@@ -40,6 +40,7 @@ export class Basket extends Component {
                     <h3>Shopping Bag</h3>
                     {cartItems.length === 0 ? <span>Empty</span> : <span> {cartItems.length} items</span>}
                 </div>
+
                 {cartItems.length > 0 &&
                     <div>
                         <ul>
@@ -65,9 +66,9 @@ export class Basket extends Component {
                         <div className="checkout">
                             <div>Total: {util.formatCurrency(cartItems.reduce((a, c) => a + c.price * (c.count / 2), 0))}</div>
                             <br></br>
-                            <button className="green">ORDER</button>
+                            <Link to="/order"><button className="green">ORDER</button></Link>
                         </div>
-                    </div>
+                    </div> 
                 }
                 </div>
             </div>

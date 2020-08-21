@@ -24,7 +24,7 @@
         {
             "id": 4,
             "image": "/images/lip-crayon.jpg",
-            "title": "Savage",
+            "title": "Sickening",
             "description": "Lip Crayon",
             "price": 20
         },
@@ -38,7 +38,7 @@
         {
             "id": 6,
             "image": "/images/lip-liner.jpg",
-            "title": "Sickening",
+            "title": "Savage",
             "description": "Lip Liner",
             "price": 35
         },
