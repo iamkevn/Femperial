@@ -3,9 +3,6 @@
 
 Femperial Cosmetics - an e-commerce app for make-up products
 
-## DEMO
-[YouTube](https://www.youtube.com/watch?v=_-Vvj8ekaxI)
-
 ## Getting Started
 * Clone this repository onto your local machine.
 * Run "json-server public/db.json --port 8000" to start the server
