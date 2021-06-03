@@ -14,3 +14,7 @@ A user will be able to:
 * View a selection of make-up products
 * Add make-up to the shopping bag
 * Remove make-up from the shopping bag
+
+## Demo
+
+* https://www.youtube.com/watch?v=mVP8OoGygFg
